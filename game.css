@@ -1,0 +1,45 @@
+body {
+    background-color: #f5f5f5;
+}
+nav {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+
+
+#scores {
+    text-decoration: none;
+    color: deepskyblue;
+    
+}
+h1{
+    font-size: 32px;
+}
+main{
+    text-align: center;
+    margin-top: 20%;
+}
+
+.question-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.question{
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.choices {
+margin: 5px;
+background-color: royalblue;
+color: #f5f5f5;
+padding: 3px;
+border-radius: 5px;
+}
+.choices:hover{
+    background-color: aqua;
+    color: black;
+    cursor: pointer;
+}
