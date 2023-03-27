@@ -143,27 +143,36 @@ function question1Func(){
     choice.remove()
   })
   result.remove()
-  questionEl.innerText = ''
+  questionEl.innerHTML = 'Enter your initials here to save your score!'
 
   let form = document.createElement('form')
   let input = document.createElement('input')
   let button = document.createElement('button')
 
-  form.addEventListener('submit', function(event) {
+  input.addEventListener('submit', function(event) {
     event.preventDefault() // Prevent the default form submission behavior
 
-    let userInitials = input.value;
-    localStorage.setItem('userInitials', userInitials)
 
     // Handle the submission data or redirect to another page
   })
+  questionEl.append(form)
 
   form.append(input) // append the input field to the form element
   form.append(button)
+  
 
-  questionEl.append(form)
 
-  button.innerText = 'Submit'
+
+  button.innerHTML = 'Submit'
+
+  let userInitials = {
+    initials : input.value,
+    score : timer
+}
+localStorage.setItem('userInitials', JSON.stringify(userInitials))
+button.addEventListener('click', function(){
+    window.location='index.html'
+})
 }
 
       
