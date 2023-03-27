@@ -156,7 +156,7 @@ function question1Func(){
     // Handle the submission data or redirect to another page
   })
   questionEl.append(form)
-
+ 
   form.append(input) // append the input field to the form element
   form.append(button)
   
