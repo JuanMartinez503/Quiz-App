@@ -1,6 +1,6 @@
 # Web APIs challenge: Code Quiz
-This challenge was given to us to help us design a interactive quiz, with multiple choice questions. The repository contains HTML/CSS and javascript. The code was made from scratch.
-##### There are many files with different ith code. Most of the code is inside.
+This challenge was given to us to help us design an interactive quiz, with multiple-choice questions. The repository contains HTML/CSS and javascript. The code was made from scratch.
+##### There are many files with different code. Most of the code is inside.
 * game.HTML
 * game.CSS
 * game.JS

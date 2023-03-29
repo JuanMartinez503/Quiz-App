@@ -209,7 +209,7 @@ function setTimer() {
       // the interval is cleared if the timer is 0
       clearInterval(timerSet);
       timer = 0;
-      timerEl.innerText = `Timer: 0`;
+  timerEl.innerText= 'Game is finished!'
       initials();
     }
   }, 1000);
