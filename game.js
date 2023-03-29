@@ -172,6 +172,7 @@ function question2Func() {
   }
 }
 function initials() {
+  timerEl.innerText= 'Game is finished!'
   choicesEL.forEach((choice) => {
     choice.remove();
   });

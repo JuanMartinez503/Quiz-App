@@ -7,6 +7,7 @@ if (stringKey !== null) {
     liEL.innerText = `Initials: ${stringKey[i].initials} Score: ${stringKey[i].score}`;
     list.appendChild(liEL);
   }
+  //creates a list for all the different stored material.
 }
 
 var resetButton = document.getElementById('reset');
