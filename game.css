@@ -18,7 +18,7 @@ h1{
 }
 main{
     text-align: center;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 .question-container{
@@ -43,3 +43,4 @@ border-radius: 5px;
     color: black;
     cursor: pointer;
 }
+/* Here is the code to the question  */
