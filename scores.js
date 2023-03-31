@@ -1,7 +1,8 @@
 const list = document.getElementById('list');
-var stringKey = JSON.parse(localStorage.getItem('userInitials'));
 
 if (stringKey !== null) {
+  var stringKey = JSON.parse(localStorage.getItem('userInitials'));
+
   for (var i = 0; i < stringKey.length; i++) {
     var liEL = document.createElement('li');
     liEL.innerText = `Initials: ${stringKey[i].initials} Score: ${stringKey[i].score}`;

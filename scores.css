@@ -25,11 +25,13 @@ button a{
 li {
     margin-top: 5px;
     list-style: none;
-    background-color: blueviolet;
+    background-color: rgba(0,0,0,.6);
     width: 200px;
     text-align: left;
     margin-right: 13px;
     padding-left: 13px;
+    font-size: 16px;
+    color: #fff;
 }
 div{
     margin-left: 20px;
@@ -39,4 +41,9 @@ p{
 }
 #reset{
     margin-left: 5px;
+}
+button {
+    background-color: aqua;
+    border-radius: 8px;
+    border: 1px solid;
 }

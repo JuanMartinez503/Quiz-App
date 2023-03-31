@@ -6,7 +6,7 @@ const result = document.getElementById("result");
 const formEl = document.querySelector("#form");
 // Here are all og my document selectors used
 var timerSet;
-
+let localScores= JSON.parse(localStorage.getItem('userInitials'))||[];
 let timer = 50;
 
 let question1 = {
@@ -181,6 +181,7 @@ function initials() {
 
   let input = document.createElement("input");
   let button = document.createElement("button");
+  button.setAttribute('style', '    background-color: aqua; border-radius: 8px;border: 1px solid;')
   button.innerText = "Submit";
 
   formEl.append(input); // append the input field to the form element
@@ -188,14 +189,13 @@ function initials() {
 
   button.addEventListener("click", function (event) {
     event.preventDefault(); // Prevent the default form submission behavior
-    console.log("hello");
     // Handle the submission data or redirect to another page
     let userInitials = {
       initials: input.value,
       score: timer,
     };
-
-    localStorage.setItem("userInitials", JSON.stringify(userInitials));
+localScores.push(userInitials)
+    localStorage.setItem("userInitials", JSON.stringify(localScores));
     window.location = "scores.html";
     // This pushes the page to the scores.html
   });
